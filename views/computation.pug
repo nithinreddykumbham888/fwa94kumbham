@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Hello, Welcome to fwa94kumbham server and My name is #{title}
+  - number = Math.floor(Math.random() * 100)
+  - output1 = Math.cos(number)
+  - output2 = Math.asin(number)
+  - output3 = Math.asinh(number)
+  p Random number is #{number}
+  p fn applied to cos(#{number}) is : #{[output1]}
+  p fn applied to asin(#{number}) is : #{[output2]} 
+  p fn applied to asinh(#{number}) is : #{[output3]}
